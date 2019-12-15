@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="course.js"></script>
+<!-- Scripts for example questions -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+<link rel="stylesheet" href="../course.css">
+<link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+<div class="course-header" style="background-color:#3e4444">Precalculus</div>
+<table class="main-table">
+<tr>
+<td class="left-column">
+<script> makeMenu(); </script>
+</td>
+<td class="main-column">
+<!-- NOTES GO HERE --> 
+
+<div class="goal"><b>Goal</b>: This is an example goal for this page. </div><br>
+
+In this course we will ...
+
+<br><br>
+<div class="definition">
+<b>Defenition</b>: This is an example definition.
+</div>
+
+<br><br> 
+
+<div class="theorem">
+This is what a <b>theorem</b> looks like.  For example, given a right triangle with sides \(a\), \(b\) and hypotenuse \(c\), 
+\[ a^2+b^2 = c^2 \]
+</div>
+
+
+    <br><div id="question1" class="exampleQuestion">
+This is what an <b>example</b> question looks like.  The question goes here.
+    <div style="text-align:center;">&darr;</div>
+</div>
+<div id="answer1" class="exampleAnswer">
+Solutions to the example question go here.  The solutions are hidden by default so that you can attempt to answer them first!   
+</div><br>
+<script> 
+    $(document).ready(function(){
+        $("#question1").click(function(){
+            $("#answer1").slideToggle("fast");
+        });
+    });
+</script>
+
+<!-- NOTES STOP HERE --> 
+</td>
+<td class="right-column">
+Right col
+</td>
+</tr>
+</table>
+</body>
+</html>
